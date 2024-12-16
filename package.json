@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Real Talk is a real-time chat application built using the MERN stack (MongoDB, Express.js, React, and Node.js). It allows users to sign up, sign in, and chat with other users in real time. The app utilizes Vite as a build tool, Socket.IO for real-time communication, Daisy UI for styling, JWT for authentication, and Tailwind CSS for UI components. The app is deployed on Render.",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "dev": "nodemon server/server.js",
+    "start": "node server/server.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.0",
+    "socket.io": "^4.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
